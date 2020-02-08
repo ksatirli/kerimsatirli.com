@@ -1,0 +1,301 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+
+<head profile="http://gmpg.org/xfn/11">
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="alternate" type="application/rss+xml" title="RSS 2.0" href="../../feed/index.html" />
+<link rel="shortcut icon" type="image/x-icon" href="http://kerimsatirli.com/wp-content/themes/kerimsatirlidotcom_v2/favicon.ico" />
+<link rel="pingback" href="../../xmlrpc.php.html" />
+	<link rel='archives' title='December 2008' href='../../2008/12/index.html' />
+	<link rel='archives' title='November 2008' href='../../2008/11/index.html' />
+	<link rel='archives' title='September 2008' href='../../2008/09/index.html' />
+	<link rel='archives' title='August 2008' href='../../2008/08/index.html' />
+	<link rel='archives' title='July 2008' href='../../2008/07/index.html' />
+	<link rel='archives' title='June 2008' href='../../2008/06/index.html' />
+	<link rel='archives' title='May 2008' href='../../2008/05/index.html' />
+	<link rel='archives' title='April 2008' href='../../2008/04/index.html' />
+	<link rel='archives' title='March 2008' href='../../2008/03/index.html' />
+	<link rel='archives' title='February 2008' href='../../2008/02/index.html' />
+	<link rel='archives' title='January 2008' href='../../2008/01/index.html' />
+	<link rel='archives' title='December 2007' href='../../2007/12/index.html' />
+	<link rel='archives' title='November 2007' href='../../2007/11/index.html' />
+	<link rel='archives' title='October 2007' href='../../2007/10/index.html' />
+	<link rel='archives' title='September 2007' href='../../2007/09/index.html' />
+	<link rel='archives' title='August 2007' href='../../2007/08/index.html' />
+	<link rel='archives' title='July 2007' href='../../2007/07/index.html' />
+	<link rel='archives' title='June 2007' href='../../2007/06/index.html' />
+	<link rel='archives' title='May 2007' href='../../2007/05/index.html' />
+	<link rel='archives' title='April 2007' href='../../2007/04/index.html' />
+	<link rel='archives' title='March 2007' href='../../2007/03/index.html' />
+	<link rel='archives' title='February 2007' href='../../2007/02/index.html' />
+	<link rel='archives' title='January 2007' href='../../2007/01/index.html' />
+	<link rel='archives' title='December 2006' href='../../2006/12/index.html' />
+	<link rel='archives' title='November 2006' href='../../2006/11/index.html' />
+	<link rel='archives' title='October 2006' href='../../2006/10/index.html' />
+	<link rel='archives' title='September 2006' href='../../2006/09/index.html' />
+	<link rel='archives' title='August 2006' href='../../2006/08/index.html' />
+	<link rel='archives' title='September 2005' href='../../2005/09/index.html' />
+	<link rel='archives' title='July 2005' href='../../2005/07/index.html' />
+	<link rel='archives' title='May 2005' href='../../2005/05/index.html' />
+	<link rel='archives' title='April 2005' href='../../2005/04/index.html' />
+	<link rel='archives' title='February 2005' href='../../2005/02/index.html' />
+	<link rel='archives' title='January 2005' href='../../2005/01/index.html' />
+	<link rel='archives' title='December 2004' href='../../2004/12/index.html' />
+
+<script type="text/javascript" src="../../assets/javascripts/prototype.js"></script>
+<script type="text/javascript" src="../../assets/javascripts/effects.js"></script>
+<script type="text/javascript" src="../../assets/javascripts/lightwindow.js"></script>
+
+<link rel="stylesheet" href="../../assets/stylesheets/site.css" type="text/css" media="screen" />
+<link rel="stylesheet" href="../../assets/stylesheets/lightwindow.css" type="text/css" media="screen" />
+
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="../../xmlrpc.php%3Frsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="../../wp-includes/wlwmanifest.xml" /> 
+<meta name="generator" content="WordPress 2.7" />
+
+</head>
+
+<body>
+
+<div id="container">
+	<h1><a href="../../index.html">kerimsatirli.com</a></h1>
+
+
+<div id="content">
+
+		<h2 id="post-449"><a href="../../2008/09/18/zarafa-set-up-guide/index.html" rel="bookmark">Zarafa 6.04 / 6.20 on CentOS 5.2 with Plesk 8.6 Set-up guide</a></h2>	
+	<div class="meta">posted in <a href="../../c/tech-talk/guides/index.html" title="View all posts in Guides" rel="category tag">Guides</a> on September 18th, 2008 </div>
+	<div class="main">
+		<p><a href="http://www.zarafa.com/">Zarafa</a> is a software package designed to allow you to share your email and calendars via Microsoft Outlook, your Windows Mobile (and Apple iPhone) device and also access your personal data right through your browser.</p>
+<p>Although the official Zarafa page suggests that installing Zarafa is a piece of cake, I have found that said cake was a tad dry, hard to digest and generally: hard to get out of its packaging and it tooks us <a href="../../tech-talk/rants/zarafa-604-on-centos-finally/index.html">a number of tries</a> to get Zarafa running with Plesk.</p>
+<p>In order to keep others from pulling their hair out, getting mad at their servers, starting to doubt their technical skill and firing off angry emails and posting nasty threads in public forums, I decided to create this tutorial to help you install Zarafa 6.04 on a CentOS 5.2 server with Plesk 8.6.</p>
+<p>Please note that the following steps worked for me and I was able to reproduce them on my home server and got the desired result. My main server runs CentOS 5.2 (32-bit version), with Plesk 8.6, Apache 2.2.3, PHP 5.2.6 and mySQL 5.0.58 and I have it set-up to use a dedicated IP for Zarafa Webaccess and also got myself a SSL certificate. </p>
+<p>This tutorial assumes that you have a domain called <code>domain.com</code> where you are going to host Zarafa Webaccess and an email account at <code>emaildomain.com</code> - both domains can be the same, this does not alter the tutorial in any way. </p>
+<p>It is further assumed that you have set-up <code>domain.com</code> with a dedicated IP and SSL certificate inside Plesk.</p>
+<div style="border: 1px solid #cccccc; padding: 10px; left: -9999px; position: absolute;">
+<strong>Index:</strong><br />
+<a href="../../tech-talk/guides/zarafa-set-up-guide/2/index.html">Part 1 - preliminary work</a><br />
+<a href="../../tech-talk/guides/zarafa-set-up-guide/3/index.html">Part 2 - installing the basics</a><br />
+<a href="../../tech-talk/guides/zarafa-set-up-guide/4/index.html">Part 3 - setting up Zarafa</a><br />
+<a href="../../tech-talk/guides/zarafa-set-up-guide/5/index.html">Part 4 - storing attachments outside the database</a><br />
+<a href="../../tech-talk/guides/zarafa-set-up-guide/6/index.html">Part 5 - setting up SSL for Zarafa</a><br />
+<a href="../../tech-talk/guides/zarafa-set-up-guide/7/index.html">Part 6 - getting WebAccess ready</a><br />
+<a href="../../tech-talk/guides/zarafa-set-up-guide/8/index.html">Part 7 - getting WebAccess Classic, Mobile ready (optional)</a><br />
+<a href="../../tech-talk/guides/zarafa-set-up-guide/9/index.html">Part 8 - getting Z-Push ready</a><br />
+<a href="../../tech-talk/guides/zarafa-set-up-guide/10/index.html">Part 9 - getting iCal ready</a><br />
+<a href="../../tech-talk/guides/zarafa-set-up-guide/11/index.html">Part 10 - updating Zarafa to the latest version</a><br />
+<a href="../../tech-talk/guides/zarafa-set-up-guide/12/index.html">A Final Word</a>
+</div>
+<div style="border: 1px solid #cccccc; padding: 10px;">
+<strong>Updates:</strong><br />
+&nbsp;<br />
+<strong>2008-09-18:</strong> updated guide to make it more readable and added pagination<br />
+<strong>2008-09-18:</strong> updated guide: &#8220;Part 10 - updating Zarafa to the latest version&#8221;<br />
+<strong>2008-09-19:</strong> updated guide: Attachments and Qmail
+</div>
+<p>&nbsp;</p>
+	</div>
+	<div class="comments">
+		<p>Pages: <a href="../../2008/09/18/zarafa-set-up-guide/index.html">1</a> <a href="../../2008/09/18/zarafa-set-up-guide/2/index.html">2</a> <a href="../../2008/09/18/zarafa-set-up-guide/3/index.html">3</a> <a href="../../2008/09/18/zarafa-set-up-guide/4/index.html">4</a> <a href="../../2008/09/18/zarafa-set-up-guide/5/index.html">5</a> <a href="../../2008/09/18/zarafa-set-up-guide/6/index.html">6</a> <a href="../../2008/09/18/zarafa-set-up-guide/7/index.html">7</a> <a href="../../2008/09/18/zarafa-set-up-guide/8/index.html">8</a> <a href="../../2008/09/18/zarafa-set-up-guide/9/index.html">9</a> <a href="../../2008/09/18/zarafa-set-up-guide/10/index.html">10</a> <a href="../../2008/09/18/zarafa-set-up-guide/11/index.html">11</a> <a href="../../2008/09/18/zarafa-set-up-guide/12/index.html">12</a></p>		<a href="../../2008/09/18/zarafa-set-up-guide/index.html#comments" title="Comment on Zarafa 6.04 / 6.20 on CentOS 5.2 with Plesk 8.6 Set-up guide"><strong>12</strong> comments</a>	</div>
+
+	<div class="tags">
+	    	tagged with:<a href="../apple-iphone/index.html" rel="tag">Apple iPhone</a>,<a href="../centos/index.html" rel="tag">CentOS</a>,<a href="../ical/index.html" rel="tag">iCal</a>,<a href="../microsoft-exchange/index.html" rel="tag">Microsoft Exchange</a>,<a href="../plesk/index.html" rel="tag">Plesk</a>,<a href="../windows-mobile/index.html" rel="tag">Windows Mobile</a>,<a href="../z-push/index.html" rel="tag">Z-Push</a>,<a href="index.html" rel="tag">Zarafa</a>	</div>
+
+	<!--
+	<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+				xmlns:dc="http://purl.org/dc/elements/1.1/"
+				xmlns:trackback="http://madskills.com/public/xml/rss/module/trackback/">
+			<rdf:Description rdf:about="http://kerimsatirli.com/2008/09/18/zarafa-set-up-guide/"
+    dc:identifier="http://kerimsatirli.com/2008/09/18/zarafa-set-up-guide/"
+    dc:title="Zarafa 6.04 / 6.20 on CentOS 5.2 with Plesk 8.6 Set-up guide"
+    trackback:ping="http://kerimsatirli.com/2008/09/18/zarafa-set-up-guide/trackback/" />
+</rdf:RDF>	-->
+
+
+
+		<h2 id="post-337"><a href="../../2008/09/16/zarafa-604-on-centos-finally/index.html" rel="bookmark">Zarafa 6.04 on CentOS (finally)</a></h2>	
+	<div class="meta">posted in <a href="../../c/tech-talk/rants/index.html" title="View all posts in Rants" rel="category tag">Rants</a> on September 16th, 2008 </div>
+	<div class="main">
+		<p>Two years and three months ago, a <a href="http://www.jeroenc.eu/">friend of mine</a> and me decided that it would be <em>moderately awesome</em> to have access to our own <a href="http://www.microsoft.com/exchange/default.mspx">Microsoft Exchange Server technology platform</a>.</p>
+<p>Being students, however, meant that we could not pony up the cash one needs to get the appropriate licenses and required hardware to actually run those tools, so we set out to find the best solution that would work for us, with the hardware (Linux servers) we have and, obviously: the lowest cost to us, in both the short and long run.</p>
+<p>Looking back over the last two years and three months, I think it is a fair assessment to say that we have seen it all:</p>
+<p>In the beginning, there was <a href="http://www.zoho.com/">Zoho&#8217;s</a> Virtual Office, which performed so sadly that it regularly crashed on our server with only one user actually using it and doing nothing but syncing a few calendar items.</p>
+<p>We spent long evenings on doing our best to get it up and running and even managed to get a license for free, by translating the Virtual Office suite into Dutch but we still could not get the hardware to run.</p>
+<p>Zoho realized that the Virtual Office platform would not work in its current form, so they rolled it up and created a new product from it: <a href="http://mail.zoho.com/mail/index.do">Zoho Mail</a>, promising that there would be an on-premises version of Zoho within a couple of months. </p>
+<p>It never happened, but we did not feel too sad about it, for we had discovered Mintersoft&#8217;s Truedesk, which, like Zoho Virtual Office, utilized a Java backend and managed to crash our server a number of times.</p>
+<p>Once again, while testing it on different hardware, it turned out that the software was flawed and Mintersoft folded pretty quickly, too - another bit the dust.</p>
+<p>Then came Scalix and PostPath, both of which we were not even able to install for whatever reason(s) I do not remember, so we had to skip those in their entirety.</p>
+<p><a href="http://www.atmail.com/">@Mail</a>, on the other hand, looked promising, but too expensive since there was no real entry-level license (and who can blame them?), but there was light at the end of the tunnel:</p>
+<p>At one point, Jeroen discovered <a href="http://www.zarafa.nl/">Zarafa</a>, built by a Dutch company and, in our eyes, the most interesting contender of all, for Zarafa licensed the actual looks of Outlook Web Access and was able to re-create the original style.</p>
+<p>Moreover, Zarafa offered something all the other tools did not: a PHP version. Both their Webaccess component and the Windows Mobile device syncing gateway utilize PHP and can be modified to your heart&#8217;s content. </p>
+<p>At first, Zarafa, like the others, did not play well with our set-up: a CentOS 4.x server with Plesk 8.x running on it but we kept at it, mostly because we got a good price on a three user license for Zarafa and we did not want to waste our own money.</p>
+<p>Try as we might, it would not work and at one point, we just gave up. Up until a year ago, when we moved to the CentOS 5.x branch and gave it another try, again, to no avail.</p>
+<p>For one reason or another, we were always able to get one of the three main components working: we either had syncing with Outlook or syncing with Mobiles or access to our data via a browser, but never, had we access to all three of them.</p>
+<p>Ever so often, mostly days after new Zarafa updates were released, we would give it another try. We knew that it worked, we had seen and experienced it first hand, we just never figured out the magical combination that would allow us to make all three components work at the same time.</p>
+<p>We went from 5.x to the 6.x branch of Zarafa, we tried 32-bit and 64-bit solutions, but all of them, somehow, did not work the way we wanted them to work, so eventually, we stopped trying again and waited for the next release cycle.</p>
+<p>A couple of days ago, I decided to give the whole thing another try. I had managed to get Zarafa working on my personal fileserver at home, which also runs on a 32-bit version of CentOS and I was able to sync contacts and Outlook with it, so I knew that there was a way.</p>
+<p>Lo&#8217; and behold: I have finally succeeded and created a working solution that encompasses Zarafa 6.04, Plesk 8.3, CentOS 5.2 (32-bit), mySQL 5.0.58 , PHP 5.2.6, Outlook 2007 and Windows Mobile 6 - all secured via SSL and not killing your CPU.</p>
+<p>If you are interested in setting up a low-cost, high-yield Microsoft Exchange-compatible gateway, that utilizes your current (CentOS) Linux hardware, click <a href="../../tech-talk/guides/zarafa-set-up-guide/index.html">here</a> to read my tutorial on it.</p>
+	</div>
+	<div class="comments">
+				<a href="../../2008/09/16/zarafa-604-on-centos-finally/index.html#comments" title="Comment on Zarafa 6.04 on CentOS (finally)"><strong>2</strong> comments</a>	</div>
+
+	<div class="tags">
+	    	tagged with:<a href="../mail/index.html" rel="tag">@mail</a>,<a href="../apple-iphone/index.html" rel="tag">Apple iPhone</a>,<a href="../centos/index.html" rel="tag">CentOS</a>,<a href="../microsoft-exchange/index.html" rel="tag">Microsoft Exchange</a>,<a href="../mintersoft-truedesk/index.html" rel="tag">Mintersoft Truedesk</a>,<a href="../plesk/index.html" rel="tag">Plesk</a>,<a href="../postpath/index.html" rel="tag">PostPath</a>,<a href="../scalix/index.html" rel="tag">Scalix</a>,<a href="../windows-mobile/index.html" rel="tag">Windows Mobile</a>,<a href="../z-push/index.html" rel="tag">Z-Push</a>,<a href="index.html" rel="tag">Zarafa</a>,<a href="../zoho-virtual-office/index.html" rel="tag">Zoho Virtual Office</a>	</div>
+
+	<!--
+	<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+				xmlns:dc="http://purl.org/dc/elements/1.1/"
+				xmlns:trackback="http://madskills.com/public/xml/rss/module/trackback/">
+			<rdf:Description rdf:about="http://kerimsatirli.com/2008/09/16/zarafa-604-on-centos-finally/"
+    dc:identifier="http://kerimsatirli.com/2008/09/16/zarafa-604-on-centos-finally/"
+    dc:title="Zarafa 6.04 on CentOS (finally)"
+    trackback:ping="http://kerimsatirli.com/2008/09/16/zarafa-604-on-centos-finally/trackback/" />
+</rdf:RDF>	-->
+
+
+
+<div id="postnav"></div>
+
+</div> 
+
+<div id="right">
+
+<div id="search">
+	<div id="search_area">
+		<form id="searchform" method="get" action="http://kerimsatirli.com/index.php">
+       		 	<div>
+				<input class="searchfield" type="text" name="s" id="s" value="" title="Enter keyword to search" />			
+				<input class="submit" type="submit" value="search" title="Click to search archives" />
+	        	</div>
+		</form>
+	</div>
+</div>
+
+<div id="widgets">
+<!-- kb advanced rss had an error. sorry. -->								<div class="textwidget"><br />
+<br /></div>
+		<div class="title">Categories</div>		<ul>
+			<li class="cat-item cat-item-3"><a href="../../c/blog/index.html" title="View all posts filed under Blog">Blog</a>
+<ul class='children'>
+	<li class="cat-item cat-item-4"><a href="../../c/blog/college/index.html" title="View all posts filed under College">College</a>
+	<ul class='children'>
+	<li class="cat-item cat-item-5"><a href="../../c/blog/college/internships/index.html" title="View all posts filed under Internships">Internships</a>
+</li>
+	</ul>
+</li>
+	<li class="cat-item cat-item-6"><a href="../../c/blog/media/index.html" title="View all posts filed under Media">Media</a>
+	<ul class='children'>
+	<li class="cat-item cat-item-10"><a href="../../c/blog/media/events/index.html" title="View all posts filed under Events">Events</a>
+</li>
+	<li class="cat-item cat-item-12"><a href="../../c/blog/media/marketing/index.html" title="View all posts filed under Marketing">Marketing</a>
+</li>
+	</ul>
+</li>
+	<li class="cat-item cat-item-8"><a href="../../c/blog/projects/index.html" title="View all posts filed under Projects">Projects</a>
+</li>
+</ul>
+</li>
+	<li class="cat-item cat-item-329"><a href="../../c/personal-stuff/index.html" title="View all posts filed under personal stuff">personal stuff</a>
+</li>
+	<li class="cat-item cat-item-9"><a href="../../c/tech-talk/index.html" title="View all posts filed under Tech Talk">Tech Talk</a>
+<ul class='children'>
+	<li class="cat-item cat-item-11"><a href="../../c/tech-talk/guides/index.html" title="View all posts filed under Guides">Guides</a>
+</li>
+	<li class="cat-item cat-item-13"><a href="../../c/tech-talk/previews/index.html" title="View all posts filed under Previews">Previews</a>
+</li>
+	<li class="cat-item cat-item-14"><a href="../../c/tech-talk/rants/index.html" title="View all posts filed under Rants">Rants</a>
+</li>
+	<li class="cat-item cat-item-15"><a href="../../c/tech-talk/reviews/index.html" title="View all posts filed under Reviews">Reviews</a>
+</li>
+</ul>
+</li>
+		</ul>
+</div>
+
+<!--		
+<ul>
+	</ul>	
+-->
+
+<h3>misc. stuff:</h3>
+
+<ul>
+	<li><a href="index.html#tag-cloud" title="Tag Cloud!" class="lightwindow" params="lightwindow_width=608,lightwindow_height=200">Tag Cloud!</a></li>
+	<li><a href="../../contact/index.html" title="contact me">contact me</a></li>
+</ul>
+		
+<h3>RSS Feeds:</h3>
+<ul>
+	<li><a href="feed:http://kerimsatirli.com/feed/" title="Syndicate this site using RSS">generic Feed</a></li>
+	<li><a href="feed://kerimsatirli.com/c/blog/feed/" title="Feed for Blog">Blog Feed</a></li>
+	<li><a href="feed://kerimsatirli.com/c/tech-talk/feed/" title="Feed for Tech-Talk">Tech-Talk Feed</a></li>
+</ul>
+
+</div>
+
+<div class="clearleft"></div>
+
+</div>
+
+<div id="tag-cloud" style="display: none;">
+<br />
+<div id="tag-cloud-inner">
+<a href='../the-next-web/index.html' class='tag-link-288' title='32 topics' rel="tag" style='font-size: 22pt;'>The Next Web</a>
+<a href='../college/index.html' class='tag-link-4' title='31 topics' rel="tag" style='font-size: 21.5pt;'>College</a>
+<a href='../xolotv/index.html' class='tag-link-325' title='30 topics' rel="tag" style='font-size: 21pt;'>xolo.tv</a>
+<a href='../interview/index.html' class='tag-link-143' title='21 topics' rel="tag" style='font-size: 16.5pt;'>interview</a>
+<a href='../trust/index.html' class='tag-link-302' title='14 topics' rel="tag" style='font-size: 13pt;'>Trust</a>
+<a href='../internship/index.html' class='tag-link-142' title='14 topics' rel="tag" style='font-size: 13pt;'>internship</a>
+<a href='../windows-mobile/index.html' class='tag-link-318' title='12 topics' rel="tag" style='font-size: 12pt;'>Windows Mobile</a>
+<a href='../conference/index.html' class='tag-link-69' title='11 topics' rel="tag" style='font-size: 11.5pt;'>Conference</a>
+<a href='../microsoft-reader/index.html' class='tag-link-183' title='10 topics' rel="tag" style='font-size: 11pt;'>Microsoft Reader</a>
+<a href='../a-trip-to-nyc/index.html' class='tag-link-370' title='9 topics' rel="tag" style='font-size: 10.5pt;'>A trip to NYC</a>
+<a href='../loyalty/index.html' class='tag-link-173' title='9 topics' rel="tag" style='font-size: 10.5pt;'>Loyalty</a>
+<a href='../friendship/index.html' class='tag-link-114' title='8 topics' rel="tag" style='font-size: 10pt;'>Friendship</a>
+<a href='../relationships/index.html' class='tag-link-234' title='8 topics' rel="tag" style='font-size: 10pt;'>relationships</a>
+<a href='../recap/index.html' class='tag-link-232' title='8 topics' rel="tag" style='font-size: 10pt;'>recap</a>
+<a href='../inspiration/index.html' class='tag-link-138' title='8 topics' rel="tag" style='font-size: 10pt;'>inspiration</a>
+<a href='../youtube/index.html' class='tag-link-327' title='7 topics' rel="tag" style='font-size: 9.5pt;'>YouTube</a>
+<a href='../20/index.html' class='tag-link-16' title='7 topics' rel="tag" style='font-size: 9.5pt;'>2.0</a>
+<a href='../reading/index.html' class='tag-link-231' title='6 topics' rel="tag" style='font-size: 9pt;'>reading</a>
+<a href='../machinima/index.html' class='tag-link-175' title='6 topics' rel="tag" style='font-size: 9pt;'>Machinima</a>
+<a href='../xda-flame/index.html' class='tag-link-322' title='6 topics' rel="tag" style='font-size: 9pt;'>XDA Flame</a>
+<a href='../the-next-web-awards/index.html' class='tag-link-289' title='6 topics' rel="tag" style='font-size: 9pt;'>The Next Web Awards</a>
+<a href='../lastfm/index.html' class='tag-link-162' title='6 topics' rel="tag" style='font-size: 9pt;'>last.fm</a>
+<a href='../bright/index.html' class='tag-link-50' title='6 topics' rel="tag" style='font-size: 9pt;'>BRIGHT</a>
+<a href='../ebooks/index.html' class='tag-link-90' title='6 topics' rel="tag" style='font-size: 9pt;'>eBooks</a>
+<a href='../treasuremytext/index.html' class='tag-link-300' title='5 topics' rel="tag" style='font-size: 8.5pt;'>Treasuremytext</a>
+<a href='../xdaflameuserscom/index.html' class='tag-link-324' title='5 topics' rel="tag" style='font-size: 8.5pt;'>xdaflameusers.com</a>
+<a href='../picnic07/index.html' class='tag-link-212' title='5 topics' rel="tag" style='font-size: 8.5pt;'>PICNIC'07</a>
+<a href='../spb-softwarehouse/index.html' class='tag-link-266' title='5 topics' rel="tag" style='font-size: 8.5pt;'>Spb Softwarehouse</a>
+<a href='../jericho/index.html' class='tag-link-151' title='5 topics' rel="tag" style='font-size: 8.5pt;'>Jericho</a>
+<a href='../battlefield-2/index.html' class='tag-link-39' title='5 topics' rel="tag" style='font-size: 8.5pt;'>Battlefield 2</a>
+<a href='../2006/index.html' class='tag-link-17' title='5 topics' rel="tag" style='font-size: 8.5pt;'>2006</a>
+<a href='../due-retribution/index.html' class='tag-link-86' title='5 topics' rel="tag" style='font-size: 8.5pt;'>Due Retribution</a>
+<a href='../nachotalkcom/index.html' class='tag-link-195' title='4 topics' rel="tag" style='font-size: 8pt;'>nachotalk.com</a>
+<a href='../mobilewebcamp/index.html' class='tag-link-189' title='4 topics' rel="tag" style='font-size: 8pt;'>mobilewebcamp</a>
+<a href='../pdamill/index.html' class='tag-link-207' title='4 topics' rel="tag" style='font-size: 8pt;'>PDAmill</a>
+<a href='../spb-pocket-plus/index.html' class='tag-link-265' title='4 topics' rel="tag" style='font-size: 8pt;'>Spb Pocket Plus</a>
+<a href='../linkedin/index.html' class='tag-link-165' title='4 topics' rel="tag" style='font-size: 8pt;'>LinkedIn</a>
+<a href='../team-dynamics/index.html' class='tag-link-281' title='4 topics' rel="tag" style='font-size: 8pt;'>team dynamics</a>
+<a href='../blogging/index.html' class='tag-link-42' title='4 topics' rel="tag" style='font-size: 8pt;'>blogging</a>
+<a href='../business/index.html' class='tag-link-53' title='4 topics' rel="tag" style='font-size: 8pt;'>business</a>
+<a href='../brightlive/index.html' class='tag-link-51' title='4 topics' rel="tag" style='font-size: 8pt;'>BRIGHTLive</a>
+<a href='../eureka/index.html' class='tag-link-97' title='4 topics' rel="tag" style='font-size: 8pt;'>Eureka</a>
+<a href='../european-bloggers-conference/index.html' class='tag-link-98' title='4 topics' rel="tag" style='font-size: 8pt;'>European Bloggers Conference</a>
+<a href='../generation-next/index.html' class='tag-link-123' title='4 topics' rel="tag" style='font-size: 8pt;'>Generation Next</a>
+<a href='../greys-anatomy/index.html' class='tag-link-127' title='4 topics' rel="tag" style='font-size: 8pt;'>Grey's Anatomy</a></div>
+</div>
+
+<script src="http://stats.wordpress.com/e-201220.js" type="text/javascript"></script>
+<script type="text/javascript">
+st_go({blog:'3491490',v:'ext',post:'0'});
+var load_cmc = function(){linktracker_init(3491490,0,2);};
+if ( typeof addLoadEvent != 'undefined' ) addLoadEvent(load_cmc);
+else load_cmc();
+</script>
+
+</body>
+</html>

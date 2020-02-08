@@ -1,0 +1,16 @@
+body {
+	background: #1a1a1a;
+}
+
+#wrapper {
+	background: url(../images/title.png);
+	display: block;
+	height: 600px;
+	margin: 0 auto;
+	text-indent: -9999px;
+	width: 800px;
+}
+
+#pdf {
+	cursor: pointer;
+}

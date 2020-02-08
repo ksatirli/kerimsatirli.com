@@ -1,0 +1,114 @@
+baseURL = "https://kerimsatirli.com/"
+
+buildDrafts = false
+buildFuture = false
+buildExpired = false
+
+configDir = "config"
+contentDir = "content/"
+dataDir = "data"
+
+defaultContentLanguage = "en"
+
+disableAliases = true
+disableHugoGeneratorInject = true
+
+#disableKinds = ["section"]
+
+enableEmoji = false
+enableGitInfo = true
+enableRobotsTXT = true
+
+footnoteAnchorPrefix = true
+footnoteReturnLinkContents = "↩"
+
+languageCode = "en-us"
+
+log = false
+
+metaDataFormat = "toml"
+
+noChmod = false
+noTimes = false
+
+paginate = 100
+paginatePath = "s"
+
+pluralizeListTitles = true
+
+publishDir = "public"
+
+pygmentsCodeFencesGuessSyntax = false
+pygmentsStyle = "monokai"
+pygmentsUseClasses = true
+
+rssLimit = 10
+
+staticDir = "static"
+
+stepAnalysis = false
+
+theme = "kerimsatirli-v3"
+
+title = "Kerim Satirli"
+
+uglyURLs = false
+
+verbose = false
+verboseLog = false
+
+watch = true
+
+[frontmatter]
+  date = ["date", "publishDate"]
+  lastmod = [":fileModTime"]
+
+[[params.social]]
+  name = "linkedin"
+  url = "https://www.linkedin.com/in/ksatirli/"
+
+[[params.social]]
+  name = "twitter"
+  url = "https://twitter.com/ksatirli"
+
+[[params.social]]
+  name = "instagram"
+  url = "https://instagram.com/ksatirli"
+
+[[params.social]]
+  name = "github"
+  url = "https://github.com/ksatirli"
+
+[outputs]
+  home = [ "HTML" ]
+  section = [ "HTML" ]
+
+[permalinks]
+  posts = "/:filename"
+
+[privacy.disqus]
+  disable = true
+
+[privacy.googleAnalytics]
+  disable = true
+
+[privacy.instagram]
+  disable = true
+
+[privacy.twitter]
+  disable = false
+  enableDNT = true
+  simple = true
+
+[privacy.vimeo]
+  disable = true
+
+[privacy.youtube]
+  disable = false
+  privacyEnhanced = true
+
+[sitemap]
+  changefreq = "weekly"
+  priority = 0.5
+  filename = "sitemap.xml"
+
